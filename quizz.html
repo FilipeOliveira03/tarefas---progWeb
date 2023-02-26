@@ -1,0 +1,130 @@
+<html lang="pt">
+
+<head>
+    <title>Quizz</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Filipe Oliveira">
+    <meta name="description" content="Website sobre Malmö">
+    <meta name="keywords" content="palavras chave">
+</head>
+
+<style>
+    * {
+        font-family: sans-serif;
+    }
+
+    body {
+        background-color: lightskyblue;
+    }
+
+    .cor {
+        color: blue;
+    }
+
+    .pinta {
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .preenche{
+        background-color: bisque;
+    }
+</style>
+
+<body>
+    <h3 class="pinta cor">Quizz</h3>
+
+    <p>Nesta página irá ser testado o seu conhecimento sobre a cidade de Malmö</p>
+    <main>
+        <form form method="POST" action="mailto: filipe.martim.oliveira@gmail.com" enctype="multipart/form-data">
+            <fieldset>
+                <legend>Quizz sobre a cidade de Malmö</legend>
+                <fieldset class="preenche">
+                    <legend>Sua Informação</legend>
+                    <p>Nome: <input type="text" name="nome" placeholder="Filipe"> <input type="reset" value="Reset"></p>
+                    <p>Apelido: <input type="text" name="apelido" placeholder="Oliveira"> <input type="reset"
+                            value="Reset"></p>
+                    <p>Email: <input type="text" name="email" placeholder="abc@gmail.com"> <input type="reset"
+                            value="Reset"></p>
+                    <input type="submit" value="Submit">
+
+                </fieldset>
+
+                <fieldset class="preenche">
+                    <legend>Escolha onde a cidade de Malmö fica situada</legend>
+                    <input type="radio" id="franca" name="malmo_countrie" value="franca">
+                    <label for="franca">França</label><br>
+                    <input type="radio" id="suecia" name="malmo_countrie" value="suecia">
+                    <label for="suecia">Suécia</label><br>
+                    <input type="radio" id="italia" name="malmo_countrie" value="italia">
+                    <label for="italia">Itália</label><br>
+                    <input type="radio" id="portugal" name="malmo_countrie" value="portugal">
+                    <label for="portugal">Portugal</label><br>
+                    <input type="radio" id="noruega" name="malmo_countrie" value="noruega">
+                    <label for="noruega">Noruega</label><br>
+                </fieldset>
+
+                <fieldset class="preenche">
+                    <legend>Escolha qual o tamanho do arranha-céus Turning Torso</legend>
+                    <img src="images/TurningTorso.jpg"><br><br>
+                    <input type="radio" id="154" name="malmo_countrie" value="154">
+                    <label for="154">154 m</label><br>
+                    <input type="radio" id="130" name="malmo_countrie" value="130">
+                    <label for="130">130 m</label><br>
+                    <input type="radio" id="190" name="malmo_countrie" value="190">
+                    <label for="190">190 m</label><br>
+                    <input type="radio" id="220" name="malmo_countrie" value="220">
+                    <label for="220">220 m</label><br>
+                    <input type="radio" id="238" name="malmo_countrie" value="238">
+                    <label for="238">238 m</label><br>
+                </fieldset>
+
+                <fieldset class="preenche">
+                    <legend>Quantos habitantes têm a cidade de Malmö</legend>
+                    <input type="radio" id="450.000" name="malmo_countrie" value="450.000">
+                    <label for="450.000">450.000</label><br>
+                    <input type="radio" id="280.000" name="malmo_countrie" value="280.000">
+                    <label for="280.000">280.000</label><br>
+                    <input type="radio" id="320.000" name="malmo_countrie" value="320.000">
+                    <label for="320.000">320.000</label><br>
+                    <input type="radio" id="890.000" name="malmo_countrie" value="890.000">
+                    <label for="890.000">890.000</label><br>
+                    <input type="radio" id="1.230.000" name="malmo_countrie" value="1.230.000">
+                    <label for="1.230.000">1.230.000</label><br>
+                </fieldset>
+
+                <fieldset class="preenche">
+                    <legend>Malmö têm uma companhia de aviões que serve a cidade, sendo ela</legend>
+                    <select id="companhia" name="companhia">
+                        <option value="malmoJet">MalmöJET</option>
+                        <option value="malmoAirways">Malmö Airways</option>
+                        <option value="airMalmo" selected>Air Malmö</option>
+                        <option value="malmoAviação">Malmö Aviation</option>
+                        <option value="skylinkMalmo">Skylink Malmö</option>
+                    </select>
+                </fieldset>
+
+                <fieldset class="preenche">
+                    <legend>Em Malmö fala-se</legend>
+                    <input list="idioma" name="idioma">
+                    <datalist id="idioma">
+                        <option value="Françes">
+                        <option value="Italiano">
+                        <option value="Sueco">
+                        <option value="Portugues">
+                        <option value="Espanhol">
+                    </datalist>
+                </fieldset>
+
+                <fieldset class="preenche">
+                    <legend>Insira algum comentário adicional para poder melhorar o quizz</legend>
+                    <textarea name="message" rows="10" cols="30"></textarea>
+                    <br><br>
+                </fieldset>
+
+                <br><input type="submit">
+            </fieldset>
+        </form>
+    </main>
+</body>
+
+</html>

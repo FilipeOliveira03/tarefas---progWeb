@@ -1,0 +1,7 @@
+*{font-family: sans-serif;}
+h1{color: aquamarine;}
+.importante{font-weight: bold;}
+#unico{background-color: blue;}
+a[target=_blank] {background-color: yellow;}
+div:hover{background-color: violet;}
+p::first-letter{font-size: 2em;}
