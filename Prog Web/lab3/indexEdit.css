@@ -10,7 +10,7 @@
     height: 50vh;
     width: 100vw;
     background-color: aquamarine;
-    font-size: 18px;
+    font-size: 100px;
     justify-content: center;
     align-items: center;
 }
@@ -24,7 +24,7 @@
     position: absolute;
     top: 8px;
     left: 16px;
-
+    font-size: 30px;
 }
 
 .capitais {
@@ -72,4 +72,111 @@
     text-align: center;
     line-height: 75px;
     font-size: 30px;
+}
+
+.circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: rebeccapurple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.circle:hover img {
+    display: block;
+}
+
+.circle img {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.header {
+    background-color: aquamarine;
+    height: 100vh;
+    font-size: 2em;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+.header h1 {
+    font-size: 2em;
+    padding: 1em;
+}
+
+.header nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav a {
+    padding: 0 1em;
+    text-decoration: none;
+    font-size: 2rem;
+    color: black;
+    font-weight: bold;
+}
+
+a:hover {
+    background-color: lightgray;
+}
+
+.item1 {
+    grid-area: header;
+    background-color: lightgreen;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.item2 {
+    grid-area: menu;
+    background-image: url(https://wallpapercave.com/wp/wp1961680.jpg);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-size: cover;
+}
+
+.item3 {
+    grid-area: main;
+    background-image: url(https://wallpapercave.com/wp/wp1961680.jpg);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.item4 {
+    grid-area: right;
+    background-color: lightgreen;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.item5 {
+    grid-area: footer;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        'header header header'
+        'menu main right '
+        'menu footer footer';
+    gap: 10px;
+    background-color: DodgerBlue;
+    padding: 10px;
+}
+
+.grid-container>div {
+    
+    text-align: center;
+    padding: 20px 0;
+    font-size: 20px;
 }
